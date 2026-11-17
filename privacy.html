@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – opsystem backup</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; line-height: 1.55; color: #1f2328; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.1rem; margin-top: 1.6rem; }
+  p.small { color: #59636e; font-size: .9rem; }
+  a { color: #0969da; }
+</style>
+</head>
+<body>
+<h1>Privacy policy – opsystem backup</h1>
+<p class="small">Last updated: 17 November 2026</p>
+
+<h2>Who we are</h2>
+<p>opsystem backup is run by <strong>Morco Polo Empire Ltd</strong>, trading as <strong>Homes Smith</strong>, registered in the UK, company number 13250406
+(<a href="https://find-and-update.company-information.service.gov.uk/company/13250406">Companies House record</a>).
+It is an internal tool for our own use only and is not available to the public.</p>
+
+<h2>What the tool does</h2>
+<p>Every night our server makes a backup of our own business operations system: a copy of its database, and an archive of the files the system keeps next to it (such as listing templates and product listing files). Security keys used by the system are never included. opsystem backup encrypts these backups on our server, uploads the encrypted copies to our own Google Drive, checks that the database copy arrived complete and unchanged, and deletes its own old copies when they are no longer needed.</p>
+
+<h2>Encryption – contents are encrypted before upload</h2>
+<ul>
+  <li>Every backup file is encrypted <strong>on our own server, before it is uploaded</strong>. Both the file contents and the file names are encrypted.</li>
+  <li>The passwords needed to decrypt the backups are created and held <strong>only by us</strong>. They are never given to Google or to anyone else. Without them nobody, including Google, can read the backups.</li>
+</ul>
+
+<h2>Google Drive as our backup storage provider</h2>
+<ul>
+  <li>We use Google Drive, provided by Google, only to <strong>store</strong> our encrypted backup files. Google's own terms and privacy policy apply to the storage of those files.</li>
+  <li>Daily copies are deleted by the tool after 31 days, and monthly copies after 370 days (about 12 months). Deleted files go to the Google Drive bin, which Google empties automatically after 30 days.</li>
+  <li>The backups may contain personal data that our business system holds for running the business, for example customer names and delivery details on orders and our staff's user accounts. That data is always encrypted while it is stored in Google Drive.</li>
+</ul>
+
+<h2>What Google account data the tool uses</h2>
+<ul>
+  <li>The tool asks Google only for the <code>drive.file</code> permission. Google describes this as access to see, edit, create and delete <strong>only the specific Google Drive files that are used with the app</strong>: files the app has created itself, or files a user has chosen to open with it. It gives no access to the rest of the Drive.</li>
+  <li>Our tool only ever creates, lists, reads (to check uploads and restore backups) and deletes <strong>its own encrypted backup files</strong>. It never asks to open any other file, so in practice it has access to nothing else in that Drive.</li>
+  <li>It does not access email, contacts, calendar, profile details or any other Google account data.</li>
+</ul>
+
+<h2>Google sign-in credentials</h2>
+<ul>
+  <li>The Google sign-in credentials for this tool (its access token and client details) are stored only on our own server, in a file that only <strong>authorised server administrators</strong> can read.</li>
+  <li>They are used <strong>solely</strong> for the backup connection to Google Drive and for nothing else.</li>
+</ul>
+
+<h2>Sharing and use</h2>
+<p>We do not sell, share or transfer data obtained through Google APIs to anyone, and we do not use it for advertising, profiling or training AI models.</p>
+<p>opsystem backup's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access</h2>
+<p>The Google account owner can remove the tool's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Backup files already in Drive stay there until they are deleted.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:info@homessmith.co.uk">info@homessmith.co.uk</a></p>
+</body>
+</html>
